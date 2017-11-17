@@ -1,7 +1,11 @@
 syntax = "proto3";
 
+option java_package = "com.takusemba.grpc.android.protos";
+option java_outer_classname = "Hello";
+option go_package = "protos";
+
 // HelloRequest を受け取って HelloReply を返すメソッドの定義
-service Greeter {
+service Hello {
     rpc SayHello (HelloRequest) returns (HelloReply) {}
 }
 
