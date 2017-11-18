@@ -15,7 +15,7 @@ public final class Helloworld {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface HelloRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:HelloRequest)
+      // @@protoc_insertion_point(interface_extends:Hello.HelloRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -29,15 +29,11 @@ public final class Helloworld {
         getNameBytes();
   }
   /**
-   * <pre>
-   * HelloRequest のリクエスト定義
-   * </pre>
-   *
-   * Protobuf type {@code HelloRequest}
+   * Protobuf type {@code Hello.HelloRequest}
    */
   public  static final class HelloRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:HelloRequest)
+      // @@protoc_insertion_point(message_implements:Hello.HelloRequest)
       HelloRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use HelloRequest.newBuilder() to construct.
@@ -99,12 +95,12 @@ public final class Helloworld {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.takusemba.grpc.android.protos.Helloworld.internal_static_HelloRequest_descriptor;
+      return com.takusemba.grpc.android.protos.Helloworld.internal_static_Hello_HelloRequest_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.takusemba.grpc.android.protos.Helloworld.internal_static_HelloRequest_fieldAccessorTable
+      return com.takusemba.grpc.android.protos.Helloworld.internal_static_Hello_HelloRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.takusemba.grpc.android.protos.Helloworld.HelloRequest.class, com.takusemba.grpc.android.protos.Helloworld.HelloRequest.Builder.class);
     }
@@ -294,24 +290,20 @@ public final class Helloworld {
       return builder;
     }
     /**
-     * <pre>
-     * HelloRequest のリクエスト定義
-     * </pre>
-     *
-     * Protobuf type {@code HelloRequest}
+     * Protobuf type {@code Hello.HelloRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:HelloRequest)
+        // @@protoc_insertion_point(builder_implements:Hello.HelloRequest)
         com.takusemba.grpc.android.protos.Helloworld.HelloRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.takusemba.grpc.android.protos.Helloworld.internal_static_HelloRequest_descriptor;
+        return com.takusemba.grpc.android.protos.Helloworld.internal_static_Hello_HelloRequest_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.takusemba.grpc.android.protos.Helloworld.internal_static_HelloRequest_fieldAccessorTable
+        return com.takusemba.grpc.android.protos.Helloworld.internal_static_Hello_HelloRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.takusemba.grpc.android.protos.Helloworld.HelloRequest.class, com.takusemba.grpc.android.protos.Helloworld.HelloRequest.Builder.class);
       }
@@ -340,7 +332,7 @@ public final class Helloworld {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.takusemba.grpc.android.protos.Helloworld.internal_static_HelloRequest_descriptor;
+        return com.takusemba.grpc.android.protos.Helloworld.internal_static_Hello_HelloRequest_descriptor;
       }
 
       public com.takusemba.grpc.android.protos.Helloworld.HelloRequest getDefaultInstanceForType() {
@@ -509,10 +501,10 @@ public final class Helloworld {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:HelloRequest)
+      // @@protoc_insertion_point(builder_scope:Hello.HelloRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:HelloRequest)
+    // @@protoc_insertion_point(class_scope:Hello.HelloRequest)
     private static final com.takusemba.grpc.android.protos.Helloworld.HelloRequest DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.takusemba.grpc.android.protos.Helloworld.HelloRequest();
@@ -548,7 +540,7 @@ public final class Helloworld {
   }
 
   public interface HelloReplyOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:HelloReply)
+      // @@protoc_insertion_point(interface_extends:Hello.HelloReply)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -562,15 +554,11 @@ public final class Helloworld {
         getMessageBytes();
   }
   /**
-   * <pre>
-   * HelloReply のレスポンス定義
-   * </pre>
-   *
-   * Protobuf type {@code HelloReply}
+   * Protobuf type {@code Hello.HelloReply}
    */
   public  static final class HelloReply extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:HelloReply)
+      // @@protoc_insertion_point(message_implements:Hello.HelloReply)
       HelloReplyOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use HelloReply.newBuilder() to construct.
@@ -632,12 +620,12 @@ public final class Helloworld {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.takusemba.grpc.android.protos.Helloworld.internal_static_HelloReply_descriptor;
+      return com.takusemba.grpc.android.protos.Helloworld.internal_static_Hello_HelloReply_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.takusemba.grpc.android.protos.Helloworld.internal_static_HelloReply_fieldAccessorTable
+      return com.takusemba.grpc.android.protos.Helloworld.internal_static_Hello_HelloReply_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.takusemba.grpc.android.protos.Helloworld.HelloReply.class, com.takusemba.grpc.android.protos.Helloworld.HelloReply.Builder.class);
     }
@@ -827,24 +815,20 @@ public final class Helloworld {
       return builder;
     }
     /**
-     * <pre>
-     * HelloReply のレスポンス定義
-     * </pre>
-     *
-     * Protobuf type {@code HelloReply}
+     * Protobuf type {@code Hello.HelloReply}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:HelloReply)
+        // @@protoc_insertion_point(builder_implements:Hello.HelloReply)
         com.takusemba.grpc.android.protos.Helloworld.HelloReplyOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.takusemba.grpc.android.protos.Helloworld.internal_static_HelloReply_descriptor;
+        return com.takusemba.grpc.android.protos.Helloworld.internal_static_Hello_HelloReply_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.takusemba.grpc.android.protos.Helloworld.internal_static_HelloReply_fieldAccessorTable
+        return com.takusemba.grpc.android.protos.Helloworld.internal_static_Hello_HelloReply_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.takusemba.grpc.android.protos.Helloworld.HelloReply.class, com.takusemba.grpc.android.protos.Helloworld.HelloReply.Builder.class);
       }
@@ -873,7 +857,7 @@ public final class Helloworld {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.takusemba.grpc.android.protos.Helloworld.internal_static_HelloReply_descriptor;
+        return com.takusemba.grpc.android.protos.Helloworld.internal_static_Hello_HelloReply_descriptor;
       }
 
       public com.takusemba.grpc.android.protos.Helloworld.HelloReply getDefaultInstanceForType() {
@@ -1042,10 +1026,10 @@ public final class Helloworld {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:HelloReply)
+      // @@protoc_insertion_point(builder_scope:Hello.HelloReply)
     }
 
-    // @@protoc_insertion_point(class_scope:HelloReply)
+    // @@protoc_insertion_point(class_scope:Hello.HelloReply)
     private static final com.takusemba.grpc.android.protos.Helloworld.HelloReply DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.takusemba.grpc.android.protos.Helloworld.HelloReply();
@@ -1081,15 +1065,15 @@ public final class Helloworld {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_HelloRequest_descriptor;
+    internal_static_Hello_HelloRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_HelloRequest_fieldAccessorTable;
+      internal_static_Hello_HelloRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_HelloReply_descriptor;
+    internal_static_Hello_HelloReply_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_HelloReply_fieldAccessorTable;
+      internal_static_Hello_HelloReply_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1099,11 +1083,12 @@ public final class Helloworld {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020helloworld.proto\"\034\n\014HelloRequest\022\014\n\004na" +
-      "me\030\001 \001(\t\"\035\n\nHelloReply\022\017\n\007message\030\001 \001(\t2" +
-      "1\n\005Hello\022(\n\010SayHello\022\r.HelloRequest\032\013.He" +
-      "lloReply\"\000B+\n!com.takusemba.grpc.android" +
-      ".protosZ\006protosb\006proto3"
+      "\n\020helloworld.proto\022\005Hello\"\034\n\014HelloReques" +
+      "t\022\014\n\004name\030\001 \001(\t\"\035\n\nHelloReply\022\017\n\007message" +
+      "\030\001 \001(\t2=\n\005Hello\0224\n\010SayHello\022\023.Hello.Hell" +
+      "oRequest\032\021.Hello.HelloReply\"\000B+\n!com.tak" +
+      "usemba.grpc.android.protosZ\006protosb\006prot" +
+      "o3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1117,17 +1102,17 @@ public final class Helloworld {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_HelloRequest_descriptor =
+    internal_static_Hello_HelloRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_HelloRequest_fieldAccessorTable = new
+    internal_static_Hello_HelloRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_HelloRequest_descriptor,
+        internal_static_Hello_HelloRequest_descriptor,
         new java.lang.String[] { "Name", });
-    internal_static_HelloReply_descriptor =
+    internal_static_Hello_HelloReply_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_HelloReply_fieldAccessorTable = new
+    internal_static_Hello_HelloReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_HelloReply_descriptor,
+        internal_static_Hello_HelloReply_descriptor,
         new java.lang.String[] { "Message", });
   }
 

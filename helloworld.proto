@@ -3,17 +3,16 @@ syntax = "proto3";
 option java_package = "com.takusemba.grpc.android.protos";
 option go_package = "protos";
 
-// HelloRequest を受け取って HelloReply を返すメソッドの定義
-service Hello {
-    rpc SayHello (HelloRequest) returns (HelloReply) {}
-}
+package Hello;
 
-// HelloRequest のリクエスト定義
 message HelloRequest {
     string name = 1;
 }
 
-// HelloReply のレスポンス定義
 message HelloReply {
     string message = 1;
+}
+
+service Hello {
+    rpc SayHello (HelloRequest) returns (HelloReply) {}
 }
