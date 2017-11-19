@@ -1,24 +1,24 @@
 package com.takusemba.grpc.android.protos;
 
-import static io.grpc.MethodDescriptor.generateFullMethodName;
-import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
-import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
+import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
+import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
+import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ClientCalls.blockingUnaryCall;
+import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
 import static io.grpc.stub.ClientCalls.futureUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
+import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
+import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
+import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
+import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
+import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.9.0-SNAPSHOT)",
+    value = "by gRPC proto compiler (version 1.7.0)",
     comments = "Source: helloworld.proto")
 public final class HelloGrpc {
 
@@ -28,37 +28,17 @@ public final class HelloGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  @java.lang.Deprecated // Use {@link #getSayHelloMethod()} instead. 
   public static final io.grpc.MethodDescriptor<com.takusemba.grpc.android.protos.Helloworld.HelloRequest,
-      com.takusemba.grpc.android.protos.Helloworld.HelloReply> METHOD_SAY_HELLO = getSayHelloMethod();
-
-  private static volatile io.grpc.MethodDescriptor<com.takusemba.grpc.android.protos.Helloworld.HelloRequest,
-      com.takusemba.grpc.android.protos.Helloworld.HelloReply> getSayHelloMethod;
-
-  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static io.grpc.MethodDescriptor<com.takusemba.grpc.android.protos.Helloworld.HelloRequest,
-      com.takusemba.grpc.android.protos.Helloworld.HelloReply> getSayHelloMethod() {
-    io.grpc.MethodDescriptor<com.takusemba.grpc.android.protos.Helloworld.HelloRequest, com.takusemba.grpc.android.protos.Helloworld.HelloReply> getSayHelloMethod;
-    if ((getSayHelloMethod = HelloGrpc.getSayHelloMethod) == null) {
-      synchronized (HelloGrpc.class) {
-        if ((getSayHelloMethod = HelloGrpc.getSayHelloMethod) == null) {
-          HelloGrpc.getSayHelloMethod = getSayHelloMethod = 
-              io.grpc.MethodDescriptor.<com.takusemba.grpc.android.protos.Helloworld.HelloRequest, com.takusemba.grpc.android.protos.Helloworld.HelloReply>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(
-                  "Hello.Hello", "SayHello"))
-              .setSampledToLocalTracing(true)
-              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.takusemba.grpc.android.protos.Helloworld.HelloRequest.getDefaultInstance()))
-              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.takusemba.grpc.android.protos.Helloworld.HelloReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new HelloMethodDescriptorSupplier("SayHello"))
-                  .build();
-          }
-        }
-     }
-     return getSayHelloMethod;
-  }
+      com.takusemba.grpc.android.protos.Helloworld.HelloReply> METHOD_SAY_HELLO =
+      io.grpc.MethodDescriptor.<com.takusemba.grpc.android.protos.Helloworld.HelloRequest, com.takusemba.grpc.android.protos.Helloworld.HelloReply>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "Hello.Hello", "SayHello"))
+          .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
+              com.takusemba.grpc.android.protos.Helloworld.HelloRequest.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
+              com.takusemba.grpc.android.protos.Helloworld.HelloReply.getDefaultInstance()))
+          .build();
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -91,13 +71,13 @@ public final class HelloGrpc {
      */
     public void sayHello(com.takusemba.grpc.android.protos.Helloworld.HelloRequest request,
         io.grpc.stub.StreamObserver<com.takusemba.grpc.android.protos.Helloworld.HelloReply> responseObserver) {
-      asyncUnimplementedUnaryCall(getSayHelloMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(METHOD_SAY_HELLO, responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getSayHelloMethod(),
+            METHOD_SAY_HELLO,
             asyncUnaryCall(
               new MethodHandlers<
                 com.takusemba.grpc.android.protos.Helloworld.HelloRequest,
@@ -130,7 +110,7 @@ public final class HelloGrpc {
     public void sayHello(com.takusemba.grpc.android.protos.Helloworld.HelloRequest request,
         io.grpc.stub.StreamObserver<com.takusemba.grpc.android.protos.Helloworld.HelloReply> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getSayHelloMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(METHOD_SAY_HELLO, getCallOptions()), request, responseObserver);
     }
   }
 
@@ -156,7 +136,7 @@ public final class HelloGrpc {
      */
     public com.takusemba.grpc.android.protos.Helloworld.HelloReply sayHello(com.takusemba.grpc.android.protos.Helloworld.HelloRequest request) {
       return blockingUnaryCall(
-          getChannel(), getSayHelloMethod(), getCallOptions(), request);
+          getChannel(), METHOD_SAY_HELLO, getCallOptions(), request);
     }
   }
 
@@ -183,7 +163,7 @@ public final class HelloGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.takusemba.grpc.android.protos.Helloworld.HelloReply> sayHello(
         com.takusemba.grpc.android.protos.Helloworld.HelloRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getSayHelloMethod(), getCallOptions()), request);
+          getChannel().newCall(METHOD_SAY_HELLO, getCallOptions()), request);
     }
   }
 
@@ -226,41 +206,6 @@ public final class HelloGrpc {
     }
   }
 
-  private static abstract class HelloBaseDescriptorSupplier
-      implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
-    HelloBaseDescriptorSupplier() {}
-
-    @java.lang.Override
-    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.takusemba.grpc.android.protos.Helloworld.getDescriptor();
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
-      return getFileDescriptor().findServiceByName("Hello");
-    }
-  }
-
-  private static final class HelloFileDescriptorSupplier
-      extends HelloBaseDescriptorSupplier {
-    HelloFileDescriptorSupplier() {}
-  }
-
-  private static final class HelloMethodDescriptorSupplier
-      extends HelloBaseDescriptorSupplier
-      implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
-    private final String methodName;
-
-    HelloMethodDescriptorSupplier(String methodName) {
-      this.methodName = methodName;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
-      return getServiceDescriptor().findMethodByName(methodName);
-    }
-  }
-
   private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
 
   public static io.grpc.ServiceDescriptor getServiceDescriptor() {
@@ -270,8 +215,7 @@ public final class HelloGrpc {
         result = serviceDescriptor;
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
-              .setSchemaDescriptor(new HelloFileDescriptorSupplier())
-              .addMethod(getSayHelloMethod())
+              .addMethod(METHOD_SAY_HELLO)
               .build();
         }
       }
